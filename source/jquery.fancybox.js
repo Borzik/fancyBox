@@ -502,6 +502,7 @@
 
 		// Navigate to gallery item by index
 		jumpto: function ( index, direction, router ) {
+			F.trigger('beforeJumpTo');
 			var current = F.current;
 
 			if (!current) {
@@ -526,6 +527,7 @@
 
 				F._start(index);
 			}
+			F.trigger('afterJumpTo');
 		},
 
 		// Center inside viewport and toggle position type to fixed or absolute if needed
