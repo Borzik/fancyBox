@@ -188,7 +188,9 @@
 			afterShow    : $.noop, // After opening
 			beforeChange : $.noop, // Before changing gallery item
 			beforeClose  : $.noop, // Before closing
-			afterClose   : $.noop  // After closing
+			afterClose   : $.noop,  // After closing,
+			beforeJumpTo : $.noop,  // Before jump to page
+			afterJumpTo  : $.noop   // After jump to page
 		},
 
 		//Current state
